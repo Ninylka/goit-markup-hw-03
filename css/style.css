@@ -45,22 +45,60 @@ h4 {
     margin: 0;
 }
 
-ul,
-ol {
-    margin: 0;
-    padding: 0;
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
-/*============== Header =================*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* outline: 2px solid teal; */
+
+}
+
+/**============== Header =================*/
+
+.page-header-container {
+    display: flex;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+}
 
 .logo-color {
 
     color: var(--primary-text-color);
 }
 
+
 .logo {
     color: var(--third-text-color);
+    margin-right: 76px;
+    margin-left: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
+.link-header:not(:last-child) {
+    margin-right: 40px;
 }
 
 .header-item {
@@ -72,6 +110,11 @@ ol {
     color: var(--primary-text-color);
 }
 
+.header-item:hover,
+.header-item:focus {
+    color: var(--ocean-color);
+}
+
 .header-address-item {
 
     font-weight: 500;
@@ -80,24 +123,19 @@ ol {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 
+
 }
 
-.header-address-link {
 
+.header-address-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-}
 
-.header-address {
-    font-style: normal;
-}
 
-.header-item:hover,
-.header-item:focus {
-    color: var(--ocean-color);
+
 }
 
 .header-address-link:hover,
@@ -105,11 +143,36 @@ ol {
     color: var(--ocean-color);
 }
 
-/*/============== Header =================/*/
+.header-address {
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 
-/*============== Hero =================*/
+
+}
+
+.header-address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+
+
+/*!============== Header =================*/
+
+/**============== Hero =================*/
+
+
+
 .hero-page {
     background: var(--primary-text-color);
+    padding-bottom: 188px;
+    padding-top: 188px;
+
 }
 
 .hero-title {
@@ -119,10 +182,18 @@ ol {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--first-light-text-color);
+    margin-bottom: 48px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
 }
 
 
 .hero-btn {
+    padding: 16px 32px;
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: 500;
@@ -132,6 +203,15 @@ ol {
     color: var(--first-light-text-color);
     background: var(--third-text-color);
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    display: block;
+
+
+
 }
 
 .hero-btn:hover,
@@ -140,12 +220,38 @@ ol {
 }
 
 
+/*!============== Hero =================/*/
+
+/**============== Section 1 =================*/
 
 
+.criteria-business {
+    padding-top: 120px;
 
-/*/============== Hero =================/*/
+}
 
-/*============== Section 1 =================*/
+.criteria-list {
+    display: flex;
+    gap: 24px;
+
+}
+
+.criterion-item {
+    width: calc((100%-72px)/4);
+}
+
+.section-page-container {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.title-section-working {
+    min-width: 323px;
+    margin: 0 auto
+}
+
 .subtitle-criterion {
 
     font-weight: 500;
@@ -153,6 +259,7 @@ ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
 }
 
 .text-criterion {
@@ -160,11 +267,28 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+
 }
 
-/*============== Section 1 =================*/
 
-/*============== Section 2 =================*/
+
+/*!============== Section 1 =================*/
+
+/**============== Section 2 =================*/
+
+.working {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+.working-container {
+    display: flex;
+    gap: 24px;
+
+
+
+}
 
 .title-section-working {
     font-weight: 700;
@@ -174,71 +298,147 @@ ol {
     text-transform: capitalize;
     text-align: center;
     color: var(--primary-text-color);
+    min-width: 323px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 72px;
+
 }
 
-/*============== Section 2 =================*/
 
-/*============== Section 3 =================*/
+.list-foto-item {
+    width: calc((100%-48px)/3);
+}
+
+/*!============== Section 2 =================*/
+
+/**============== Section 3 =================*/
 
 .employees {
     background: var(--second-light-text-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
 
+.photos-employees-list {
+    display: flex;
+    gap: 24px
+}
+
 .subtitle-employees {
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
     color: var(--primary-text-color);
+    margin-bottom: 72px;
 }
 
+.photo-title-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
 .name-employees {
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    padding-right: auto;
+    padding-left: auto;
+    padding-top: 32px;
+    margin-bottom: 8px;
+
 }
 
 .profession {
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    padding-bottom: 32px;
+    padding-right: auto;
+    padding-left: auto;
+
+
 }
 
 .photo-employees-item {
     background-color: var(--first-light-text-color);
+    width: calc((100%-72)/4);
 }
 
 
-/*/============== Section 3 =================/*/
 
 
-/*============== Portfolio =================*/
 
 
+
+
+
+/*!============== Section 3 =================/*/
+
+
+/**============== Portfolio =================*/
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+
+.portfolio-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+
+
+
+
+.button-list {
+
+    /* align-items: center; */
+    margin: 0 auto;
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    max-width: 586px;
+    margin-bottom: 72px;
+}
+
+.btn-portfolio {
+    width: calc((100%-96)/5);
+}
 
 .btn-color {
     font-family: var(--primary-font);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--third-text-color);
     background: var(--second-light-text-color);
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
+    border: 1px solid var(--ocean-color) border-radius: 4px;
     cursor: pointer;
+    padding: 12px 24px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+
 }
 
 .btn-color:hover,
@@ -250,17 +450,39 @@ ol {
 
 
 
+
 .foto-applications-item {
     background: var(--first-light-text-color);
+    width: calc(100%-48)/3;
+
+
+
+}
+
+.foto-applications-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+
 }
 
 
+.list-web {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .title-applications {
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: 8px;
 }
 
 .text-applications {
@@ -268,16 +490,25 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 32px;
 }
 
-/*/============== Portfolio =================/*/
+/*!============== Portfolio =================/*/
+
+
+
+/**============== Footer =================/*/
 
 
 
 
-/*============== Footer =================*/
 .footer-page {
     background: var(--primary-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
 
 .logo-footer {
@@ -289,6 +520,17 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-light-text-color);
+    max-width: 264px;
+    margin-right: auto;
+
 }
 
-/*============== Footer =================*/
+.footer-logo {
+    color: var(--third-text-color);
+    margin-right: auto;
+    margin-bottom: 16px;
+    display: inline-block;
+
+}
+
+/*!============== Footer =================/
