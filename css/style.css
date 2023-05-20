@@ -497,6 +497,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     margin-bottom: 8px;
+    margin-top: 0;
 }
 
 .text-applications {
