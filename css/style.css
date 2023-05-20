@@ -535,10 +535,12 @@ img {
 }
 
 .footer-logo {
-    color: var(--third-text-color);
-    margin-right: auto;
-    margin-bottom: 16px;
     display: inline-block;
+    margin-bottom: 16px;
+    color: var(--third-text-color);
+    margin-right: 0 auto;
+
+
 
 }
 
