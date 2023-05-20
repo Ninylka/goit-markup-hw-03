@@ -116,6 +116,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     padding-top: 24px;
+    display: block;
     padding-bottom: 24px;
 }
 
@@ -234,7 +235,9 @@ img {
 /*!============== Hero =================/*/
 
 /**============== Section 1 =================*/
-
+.title-criteria {
+    visibility: hidden;
+}
 
 .criteria-business {
     padding-top: 120px;
@@ -250,12 +253,6 @@ img {
 
 .criterion-item {
     width: calc((100%-72px)/4);
-}
-
-.section-page-container {
-    display: flex;
-    align-items: center;
-
 }
 
 
@@ -339,7 +336,7 @@ img {
 }
 
 .subtitle-employees {
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -350,16 +347,13 @@ img {
 }
 
 .photo-title-text {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding: 32px 16px;
 }
 
 
 
 .name-employees {
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -370,14 +364,10 @@ img {
 }
 
 .profession {
-    font-weight: 400px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    padding-bottom: 32px;
-    padding-right: auto;
-    padding-left: auto;
     text-align: center;
 
 
@@ -403,28 +393,24 @@ img {
 
 /**============== Portfolio =================*/
 
+.title-portfolio {
+    visibility: hidden;
+}
+
+
 .portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
 }
 
 
-.portfolio-container {
+.button-list {
+
+    margin-bottom: 72px;
+    justify-content: center;
     display: flex;
     align-items: center;
     gap: 24px;
-
-}
-
-.button-list {
-
-    /* align-items: center; */
-    margin: 0 auto;
-    /* flex-direction: row; */
-    /* align-items: flex-start; */
-    /* max-width: 586px; */
-    margin-bottom: 72px;
-    justify-content: center;
 }
 
 .btn-portfolio {
@@ -434,7 +420,7 @@ img {
 .btn-color {
     font-family: var(--primary-font);
     font-style: normal;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -444,7 +430,6 @@ img {
     border: 1px solid var(--border-color);
     cursor: pointer;
     padding: 12px 24px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     margin: 0 auto;
     display: block;
@@ -476,17 +461,14 @@ img {
 }
 
 .list-web {
-    display: flex;
-    flex-direction: column;
     padding: 32px 16px;
-    border-top: none;
     border: 1px solid var(--border-color);
     border-top: none;
-    margin-top: 0;
+
 }
 
 .title-applications {
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
